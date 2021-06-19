@@ -1,0 +1,232 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.25in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}
+    {\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]
+{\item\small
+        {\textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeBullet}[1]
+{\item\small
+	{#1 \vspace{-2pt}
+	}
+}
+
+\newcommand{\resumeSubheading}[1]
+{\vspace{-4pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} \\
+	\end{tabular*}\vspace{-6pt}
+}
+  
+  
+\newcommand{\resumeSubheadingDetailed}[4]
+  {\vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Maanu Grover} & {mgrover3@illinois.edu} \\
+  \textbf & 630-258-9190 \\
+  \textbf & {github.com/Mongwell}
+\end{tabular*}
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheadingDetailed
+      {Swarm Robotix}{Oswego, IL}
+      {Software Development Intern}{June 2017 - August 2017}
+      \resumeItemListStart
+        \resumeBullet
+        {Worked with a team to prototype a concept for the optimization of intermodal container logistics using multi-robotic systems}
+        \resumeBullet
+        {Developed code for communication among internal components and between robots as well as sensor data manipulation using Arduinos and Java on Raspberry Pis}
+        \resumeBullet
+        {Designed high level algorithms for port navigation, task assignment, and swarm cooperation}
+        % for future use
+      \resumeItemListEnd
+
+   % \resumeSubheading
+		%{Top Tier Learning}{Naperville, IL}
+		%{Tutor}{March 2016 - August 2017}
+		%\resumeItemListStart
+		  %\resumeBullet
+		  %{Instruct middle and high school students with schoolwork they are struggling with in subjects such as algebra, trigonometry, calculus, physics, and chemistry}
+		%\resumeItemListEnd    
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheadingDetailed
+{University of Illinois at Urbana-Champaign}{}
+{Computer Science;  GPA: 3.88/4.00}{August 2017 - Present}
+\resumeItemListStart
+\resumeItem{Coursework}
+{Numerical Methods, Computer Architecture, Data Structures with Honors: Geometric Structures for Graphics, Discrete Structures, Applied Linear Algebra, Intro to Computer Science, Physics: Mechanics}
+\resumeItem{Honors}
+{James Scholar Nominee, Dean's List}
+\resumeItemListEnd
+%    \resumeSubheading
+%{Neuqua Valley High School}{}
+%{GPA: 4.38, ACT: 35}{August 2013 - May 2017}
+%\resumeItemListStart
+%\resumeItem{Coursework}
+%{AP Computer Science, Calculus 3, AP Statistics, PLTW: Engineering Design Development, \\ PLTW: Digital Electronics}
+%\resumeItem{Honors}
+%{Commended National Merit Scholar, Academic Honor Roll 8 Semesters}
+%      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%----------Activities---------------
+\section{Activities}
+  \resumeSubHeadingListStart
+  	\vspace{-1pt}\item
+  	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  		\textbf{CS 125 Course Assistant} & \textit{\small January 2018 - May 2018}\\
+  	\end{tabular*}\vspace{-5pt}
+  	\resumeItemListStart
+  		\resumeBullet
+  		{Assist students taking Intro to Computer Science by providing more accessible guidance and instruction}
+  		\resumeBullet
+  		{Aid teaching assistants with the instruction of lab sections}
+  		\resumeBullet
+  		{Hold office hours during the week to help students struggling with the machine problems}
+  		\resumeBullet
+  		{Moderate the course forum to answer questions about either course topics or logistics}
+  	\resumeItemListEnd
+  	\vspace{-1pt}\item
+  	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  		\textbf{Association for Computing Machinery} & \textit{\small August 2017 - Present}\\
+  	\end{tabular*}\vspace{-5pt}
+  	\resumeItemListStart
+  		\resumeBullet
+  		{Chair of GNU Linux User Group for promoting use of Linux and the discussion of free and open source software}
+  		\resumeBullet
+  		{Member of special interest groups for operating systems and the Association for Data Science and Analytics}
+  		% and the Clearwaters distributed computing project
+%  		\resumeBullet
+%  		{Member of Association for Data Science and Analytics}
+  	\resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  	\resumeSubheading{Build Your Own Lisp}
+  	\resumeItemListStart
+		\resumeBullet
+		{Learn how to build an interpreted programming language by developing a simple Lisp}
+		\resumeBullet
+		{Improve knowledge of and experience with C and imperative programming}
+	\resumeItemListEnd
+	\resumeSubheading{Password Safe}
+	\resumeItemListStart
+		\resumeBullet
+		{Build a command-line interface password safe using SHA-256 hashing and PBE MD5 Triple DES encryption}
+		\resumeBullet
+		{Created an executable Java archive for distribution on GitHub for each release}
+	\resumeItemListEnd
+%	\resumeSubheading{Kernel Development Project}
+%	\resumeItemListStart
+%		\resumeBullet
+%		{Develop a working microkernel to better comprehend the depth and levels of OS development}
+%		\resumeBullet
+%		{Understand systems programming with Assembly and C and compare benefits of new systems languages like Rust}
+%	\resumeItemListEnd
+	\resumeSubheading{Arch Linux Configuration}
+	\resumeItemListStart
+		\resumeBullet
+		{Setup an Arch Linux installation to comprehend the parts of a Linux distribution and system administration}
+		\resumeBullet
+		{Build lightweight userspace for daily use from scratch, installing and customizing all necessary programs for an efficient personalized workflow}
+	\resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+  \resumeSubHeadingListStart
+ % \begin{multicols}{2}  	
+  	\item{
+%  	  \begin{flushleft}
+        \textbf{Languages}{: Java, C++, Python, Bash, LaTeX, RobotC}
+%      \end{flushleft}
+%    }
+	\hfill
+%	\item{
+%	  \begin{flushright}
+      	\textbf{Tools/Technologies}{: Git, Raspberry Pi, ViM}   \begin{comment} 
+      															Arduino 
+     															\end{comment}
+%      \end{flushright}
+    }
+% \end{multicols}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
