@@ -20,10 +20,12 @@
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.25in}
+\addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
+\setlength{\multicolsep}{0pt plus 0pt minus 0pt}
+\titlespacing*{\section}{0pt}{0\baselineskip}{\baselineskip}
 
 \urlstyle{same}
 
@@ -50,33 +52,33 @@
 	}
 }
 
-\newcommand{\resumeSubheading}[1]
-{\vspace{-4pt}\item
+\newcommand{\resumeSubheading}[2]
+{\vspace{-1pt}\item[]
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-		\textbf{#1} \\
+		\textbf{#1} & \textit{\small #2} \\
 	\end{tabular*}\vspace{-6pt}
 }
   
   
 \newcommand{\resumeSubheadingDetailed}[4]
-  {\vspace{-2pt}\item
+  {\vspace{-1pt}\item[]
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,itemsep=0.2pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0.2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%  Resume STARTS HERE  %%%%%%%
 
 
 \begin{document}
@@ -89,107 +91,65 @@
 \end{tabular*}
 
 
-
-%-----------EXPERIENCE-----------------
-\section{Work Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheadingDetailed
-      {Swarm Robotix}{Oswego, IL}
-      {Software Development Intern}{June 2017 - August 2017}
-      \resumeItemListStart
-        \resumeBullet
-        {Worked with a team to prototype a concept for the optimization of intermodal container logistics using multi-robotic systems}
-        \resumeBullet
-        {Developed code for communication among internal components and between robots as well as sensor data manipulation using Arduinos and Java on Raspberry Pis}
-        \resumeBullet
-        {Designed high level algorithms for port navigation, task assignment, and swarm cooperation}
-        % for future use
-      \resumeItemListEnd
-
-   % \resumeSubheading
-		%{Top Tier Learning}{Naperville, IL}
-		%{Tutor}{March 2016 - August 2017}
-		%\resumeItemListStart
-		  %\resumeBullet
-		  %{Instruct middle and high school students with schoolwork they are struggling with in subjects such as algebra, trigonometry, calculus, physics, and chemistry}
-		%\resumeItemListEnd    
-  \resumeSubHeadingListEnd
-
-
 %-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheadingDetailed
-{University of Illinois at Urbana-Champaign}{}
-{Computer Science;  GPA: 3.88/4.00}{August 2017 - Present}
+{University of Illinois}{Urbana-Champaign, IL}
+{Computer Science;  GPA: 3.52/4.00}{August 2017 - Present}
 \resumeItemListStart
 \resumeItem{Coursework}
-{Numerical Methods, Computer Architecture, Data Structures with Honors: Geometric Structures for Graphics, Discrete Structures, Applied Linear Algebra, Intro to Computer Science, Physics: Mechanics}
-\resumeItem{Honors}
-{James Scholar Nominee, Dean's List}
+{Algorithms \& Models of Computation, Algorithms (additional elective), System Programming, Applied Parallel Programming, Computer Security, Programming Languages \& Compilers, Computer Architecture, Data Structures with Honors: Geometric Structures for Graphics, Probability and Statistics for Computer Science, Numerical Methods, Applied Linear Algebra, Virtual Reality}
 \resumeItemListEnd
-%    \resumeSubheading
-%{Neuqua Valley High School}{}
-%{GPA: 4.38, ACT: 35}{August 2013 - May 2017}
-%\resumeItemListStart
-%\resumeItem{Coursework}
-%{AP Computer Science, Calculus 3, AP Statistics, PLTW: Engineering Design Development, \\ PLTW: Digital Electronics}
-%\resumeItem{Honors}
-%{Commended National Merit Scholar, Academic Honor Roll 8 Semesters}
-%      \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 
-%----------Activities---------------
-\section{Activities}
-  \resumeSubHeadingListStart
-  	\vspace{-1pt}\item
-  	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-  		\textbf{CS 125 Course Assistant} & \textit{\small January 2018 - May 2018}\\
-  	\end{tabular*}\vspace{-5pt}
-  	\resumeItemListStart
-  		\resumeBullet
-  		{Assist students taking Intro to Computer Science by providing more accessible guidance and instruction}
-  		\resumeBullet
-  		{Aid teaching assistants with the instruction of lab sections}
-  		\resumeBullet
-  		{Hold office hours during the week to help students struggling with the machine problems}
-  		\resumeBullet
-  		{Moderate the course forum to answer questions about either course topics or logistics}
-  	\resumeItemListEnd
-  	\vspace{-1pt}\item
-  	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-  		\textbf{Association for Computing Machinery} & \textit{\small August 2017 - Present}\\
-  	\end{tabular*}\vspace{-5pt}
-  	\resumeItemListStart
-  		\resumeBullet
-  		{Chair of GNU Linux User Group for promoting use of Linux and the discussion of free and open source software}
-  		\resumeBullet
-  		{Member of special interest groups for operating systems and the Association for Data Science and Analytics}
-  		% and the Clearwaters distributed computing project
-%  		\resumeBullet
-%  		{Member of Association for Data Science and Analytics}
-  	\resumeItemListEnd
-  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheadingDetailed{Advanced Reactors and Fuel Cycles (ARFC)}{Champaign, IL}
+{Undergraduate Research Assistant for Nuclear Engineering Department}{May 2019 - August 2019}
+\resumeItemListStart
+\resumeBullet
+{Debugged a variety of  issues in a Python nuclear engineering toolkit (PyNE) to ensure accurate functionality}
+\resumeBullet
+{Re-implemented CircleCI integration tests to use the most recent data sources to ensure the library produces precise results, isolating test cases in different Docker containers with different optional dependencies}
+\resumeBullet
+{Updated documentation to provide more accurate information on features, updates, and installation}
+\resumeBullet
+{Overhauled Bash installation scripts and Dockerfiles for PyNE to reduce obsolete dependencies, update required dependencies to latest versions, reduce required permissions to install the library, and reorganize dependency package management}
+\resumeItemListEnd
+
+%\resumeSubheadingDetailed
+%{Swarm Robotix}{Oswego, IL}
+%{Software Development Intern}{June 2017 - August 2017}
+%\resumeItemListStart
+%\resumeBullet
+%{Worked with a team to prototype a concept for the optimization of intermodal container logistics in distribution centers using coordinated multi-robotic systems to decouple transportation mechanisms from grounded machinery}
+%\resumeBullet
+%{Developed low-level software for both networking and communication among internal components of each machine and between robots, as well as manipulation of sensor data using Arduinos and Java on Raspberry Pis}
+%\resumeBullet
+%{Designed high level algorithms for port navigation, task assignment, and swarm cooperation}
+%\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
-  \resumeSubHeadingListStart
-  	\resumeSubheading{Build Your Own Lisp}
-  	\resumeItemListStart
-		\resumeBullet
-		{Learn how to build an interpreted programming language by developing a simple Lisp}
-		\resumeBullet
-		{Improve knowledge of and experience with C and imperative programming}
-	\resumeItemListEnd
-	\resumeSubheading{Password Safe}
-	\resumeItemListStart
-		\resumeBullet
-		{Build a command-line interface password safe using SHA-256 hashing and PBE MD5 Triple DES encryption}
-		\resumeBullet
-		{Created an executable Java archive for distribution on GitHub for each release}
-	\resumeItemListEnd
+\resumeSubHeadingListStart
+\resumeSubheading{Ray Tracer}{January 2018 - May 2018}
+\resumeItemListStart
+\resumeBullet{Implemented a physically-based renderer using principles of light optics including reflectivity and transparency, improving render quality using multi-sampling}
+\resumeBullet{Utilized a tree-like bounding volume hierarchy data structure to optimize organization of geometric primitives, especially for rendering larger triangle mesh models, improving ray-intersection detection to logarithmic time}
+\resumeItemListEnd
+%probably add gpu cluster here
+\resumeSubheading{Password Safe}{November 2017 - January 2018}
+\resumeItemListStart
+\resumeBullet
+{Built a command-line interface password safe, ensuring confidentiality of data entries using SHA-256 hashing and Triple DES encryption, and utilizing a REPL to interact with the user}
+\resumeBullet
+{Made use of Java archives to allow releases of the project to be portable and minimize required dependencies}
+\resumeItemListEnd
 %	\resumeSubheading{Kernel Development Project}
 %	\resumeItemListStart
 %		\resumeBullet
@@ -197,35 +157,54 @@
 %		\resumeBullet
 %		{Understand systems programming with Assembly and C and compare benefits of new systems languages like Rust}
 %	\resumeItemListEnd
-	\resumeSubheading{Arch Linux Configuration}
-	\resumeItemListStart
-		\resumeBullet
-		{Setup an Arch Linux installation to comprehend the parts of a Linux distribution and system administration}
-		\resumeBullet
-		{Build lightweight userspace for daily use from scratch, installing and customizing all necessary programs for an efficient personalized workflow}
-	\resumeItemListEnd
-  \resumeSubHeadingListEnd
+\resumeSubheading{ACM Pixel}{October 2018 - December 2018}
+\resumeItemListStart
+\resumeBullet{Created a Flask app that receives x and y coordinates and a color as POST requests and places them on a screen}
+\resumeBullet{Generated systemd services to allow automatic updating of software and launching of the application on boot}
+\resumeItemListEnd
+\resumeSubheading{Arch Linux Configuration}{October 2017 - August 2019}
+\resumeItemListStart
+\resumeBullet
+{Set up an Arch Linux installation by manually formatting partitions, setting up file systems, configuring drive mounting on boot, installing drivers, creating users, and other system administration tasks}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+%swap pixel with gpu cluster note in ACM section in activities
 
+%----------Activities---------------
+\section{Activities}
+  \resumeSubHeadingListStart
+  	\resumeSubheading
+  	{Chair of GNU Linux User Group (ACM)}{August 2018 - December 2018}
+  	\resumeItemListStart
+  		\resumeBullet
+  		{Special interest group focused on promoting the use of Linux and the development of free and open source software}
+  		\resumeBullet
+  		{Involved in projects to provide tools for computer science and engineering students and other ACM members to use, including a distributed GPU cluster utilizing idle time of machines containing Nvidia Titan Blacks}
+  	\resumeItemListEnd
+  	\resumeSubheading
+  	{CS 125 Course Assistant}{January 2018 - May 2018}
+  	\resumeItemListStart
+  	%%condense%%
+  	\resumeBullet
+  	{Assisted students taking Intro to Computer Science by providing more accessible guidance and instruction through one-on-one assistance in lab sections}
+  	\resumeBullet
+  	{Held 2-3 weekly office hours with 5-10 students present to discuss issues students faced with the machine problems}
+  	\resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
   \resumeSubHeadingListStart
- % \begin{multicols}{2}  	
-  	\item{
-%  	  \begin{flushleft}
-        \textbf{Languages}{: Java, C++, Python, Bash, LaTeX, RobotC}
-%      \end{flushleft}
-%    }
-	\hfill
-%	\item{
-%	  \begin{flushright}
-      	\textbf{Tools/Technologies}{: Git, Raspberry Pi, ViM}   \begin{comment} 
-      															Arduino 
-     															\end{comment}
-%      \end{flushright}
+\begin{multicols}{2}
+  	\item[]{
+        \textbf{Languages}{: Java, C, C++, Python, Bash, Verilog, MIPS, Markdown, LaTeX}
     }
-% \end{multicols}
-  \resumeSubHeadingListEnd
+	\hfill
+	\item[]{
+      	\textbf{Tools/Technologies}{: Git, ViM, Raspberry Pi}
+    }
+\end{multicols}
+\resumeSubHeadingListEnd
 
 
 %-------------------------------------------
