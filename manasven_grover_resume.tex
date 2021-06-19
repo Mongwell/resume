@@ -73,9 +73,9 @@
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,itemsep=0.2pt]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-4pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0.2pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
 %-------------------------------------------
 %%%%%%  Resume STARTS HERE  %%%%%%%
@@ -95,16 +95,31 @@
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheadingDetailed
-{University of Illinois at Urbana-Champaign}{GPA: 3.53/4.00}
+{University of Illinois at Urbana-Champaign}{GPA: 3.58/4.00}
 {Computer Science;  Bachelor's of Science}{August 2017 - May 2021}
 \resumeItemListStart
 \resumeItem{Coursework}
 %{Algorithms \& Models of Computation, Algorithms (additional elective), System Programming, Distributed Systems, Applied Parallel Programming, Database Systems, Computer Security, Programming Languages \& Compilers, Computer Architecture, Data Structures with Honors: Geometric Structures for Graphics, Probability and Statistics for Computer Science, Numerical Methods, Applied Linear Algebra, Virtual Reality}
-{Algorithms \& Models of Computation, Data Structures, Distributed Systems, Applied Parallel Programming, System Programming, Database Systems, Computer Security,  Languages \& Compilers}
+{Algorithms \& Models of Computation, Data Structures, Advanced Distributed Systems, Applied Parallel Programming, System Programming, Database Systems, Computer Security,  Languages \& Compilers}
 
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+\resumeSubHeadingListStart
+\begin{multicols}{2}
+\item[]\small{
+	\textbf{Languages}{: C/C++, Python, Go, Bash, SQL, MongoDB}
+}
+\hfill
+\item[]\small{
+	\textbf{Tools/Technologies}{: Git, Docker, AWS, Flask, ViM}
+}
+\end{multicols}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
 
 %-----------EXPERIENCE-----------------
 \section{Work Experience}
@@ -139,6 +154,13 @@
 %-----------PROJECTS-----------------
 \section{Projects}
 \resumeSubHeadingListStart
+\resumeSubheading{Bebop (Social Media Web Application)}{October 2020 - December 2020}
+\resumeItemListStart
+\resumeBullet{Built a Python Flask application hosted on CPanel with one local database and one remote database on AWS}
+\resumeBullet{Wrote functionality using embedded SQL queries for users to create account credentials and write posts}
+\resumeBullet{Tracked post interactions in a MongoDB database to generate per-user statistics data visualization using Chart.js }
+\resumeBullet{Prioritized relevant content by calculating word distance using the Word2Vec Python NLP library}
+\resumeItemListEnd
 \resumeSubheading{Ray Tracer}{January 2018 - May 2018}
 \resumeItemListStart
 \resumeBullet{Implemented a physically-based renderer using principles of light optics including reflectivity and transparency, improving render quality using multi-sampling}
@@ -194,29 +216,14 @@ tournaments, managing jersey creation and procurement, and obtaining team equipm
   		\resumeBullet
   		{Involved in projects to provide tools for computer science, engineering students and other ACM members to use}
   	\resumeItemListEnd
-  	\resumeSubheading
-  	{CS 125 Course Assistant}{January 2018 - May 2018}
-  	\resumeItemListStart
-  	\resumeBullet
-  	{Held 2-3 weekly office hours with 5-10 students present to discuss issues students faced with machine problems}
-  	\resumeBullet
-  	{Attended a weekly lab section to provide more accessible guidance and instruction through one-on-one assistance}
-  	\resumeItemListEnd
+%  	\resumeSubheading
+%  	{CS 125 Course Assistant}{January 2018 - May 2018}
+%  	\resumeItemListStart
+%  	\resumeBullet
+%  	{Held 2-3 weekly office hours with 5-10 students present to discuss issues students faced with machine problems}
+%  	\resumeBullet
+%  	{Attended a weekly lab section to provide more accessible guidance and instruction through one-on-one assistance}
+%  	\resumeItemListEnd
   \resumeSubHeadingListEnd
 
-%--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-  \resumeSubHeadingListStart
-%\begin{multicols}{2}
-  	\item[]\small{
-        \textbf{Languages}{: Java, C, C++, Python, Bash, Verilog, MIPS, Markdown, LaTeX}
-    }
-	%\hfill
-	\item[]{
-      	\textbf{Tools/Technologies}{: Git, Docker, Raspberry Pi, ViM}
-    }
-%\end{multicols}
-\resumeSubHeadingListEnd
-
-%-------------------------------------------
 \end{document}
