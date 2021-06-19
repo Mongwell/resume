@@ -22,7 +22,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.4in}
 \addtolength{\textheight}{1.0in}
 \setlength{\multicolsep}{0pt plus 0pt minus 0pt}
 \titlespacing*{\section}{0pt}{0\baselineskip}{\baselineskip}
@@ -35,33 +35,33 @@
 
 % Sections formatting
 \titleformat{\section}
-    {\vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+    {\vspace{-1pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]
-{\item\small
-        {\textbf{#1}{: #2 \vspace{-2pt}}
+{\item[$\bullet$]\small
+        {\textbf{#1}{: #2 \vspace{-1pt}}
   }
 }
 
 \newcommand{\resumeBullet}[1]
-{\item\small
-	{#1 \vspace{-2pt}
+{\item[$\bullet$]\small
+	{#1 \vspace{-1pt}
 	}
 }
 
 \newcommand{\resumeSubheading}[2]
-{\vspace{-1pt}\item[]
+{\vspace{-1pt}\item[]\small
 	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
 		\textbf{#1} & \textit{\small #2} \\
 	\end{tabular*}\vspace{-6pt}
 }
-  
-  
+
+
 \newcommand{\resumeSubheadingDetailed}[4]
-  {\vspace{-1pt}\item[]
+  {\vspace{-1pt}\item[]\small
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
@@ -85,9 +85,9 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Maanu Grover} & {mgrover3@illinois.edu} \\
+  \textbf{\huge Maanu Grover} & {mgrover3@illinois.edu} \\
   \textbf & 630-258-9190 \\
-  \textbf & {github.com/mongwell}
+  \textbf & {1749 Trevino Circle, Bolingbrook, IL}
 \end{tabular*}
 
 
@@ -95,11 +95,13 @@
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheadingDetailed
-{University of Illinois}{Urbana-Champaign, IL}
-{Computer Science;  GPA: 3.52/4.00}{August 2017 - Present}
+{University of Illinois at Urbana-Champaign}{GPA: 3.53/4.00}
+{Computer Science;  Bachelor's of Science}{August 2017 - May 2021}
 \resumeItemListStart
 \resumeItem{Coursework}
-{Algorithms \& Models of Computation, Algorithms (additional elective), System Programming, Distributed Systems, Applied Parallel Programming, Database Systems, Computer Security, Programming Languages \& Compilers, Computer Architecture, Data Structures with Honors: Geometric Structures for Graphics, Probability and Statistics for Computer Science, Numerical Methods, Applied Linear Algebra, Virtual Reality}
+%{Algorithms \& Models of Computation, Algorithms (additional elective), System Programming, Distributed Systems, Applied Parallel Programming, Database Systems, Computer Security, Programming Languages \& Compilers, Computer Architecture, Data Structures with Honors: Geometric Structures for Graphics, Probability and Statistics for Computer Science, Numerical Methods, Applied Linear Algebra, Virtual Reality}
+{Algorithms \& Models of Computation, Data Structures, Distributed Systems, Applied Parallel Programming, System Programming, Database Systems, Computer Security,  Languages \& Compilers}
+
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -112,9 +114,9 @@
 {Undergraduate Research Assistant for Nuclear Engineering Department}{May 2019 - August 2019}
 \resumeItemListStart
 \resumeBullet
-{Debugged a variety of  issues in a Python nuclear engineering toolkit (PyNE) to ensure accurate functionality}
+{Debugged a variety of issues in a Python nuclear engineering toolkit (PyNE) to ensure accurate functionality}
 \resumeBullet
-{Re-implemented CircleCI integration tests to use the most recent data sources to ensure the library produces precise results, isolating test cases in different Docker containers with different optional dependencies}
+{Re-implemented CircleCI integration tests to use most recent data sources to ensure library produces precise results, isolating test cases in different Docker containers with different optional dependencies}
 \resumeBullet
 {Updated documentation to provide more accurate information on features, updates, and installation}
 \resumeBullet
@@ -126,7 +128,7 @@
 %{Software Development Intern}{June 2017 - August 2017}
 %\resumeItemListStart
 %\resumeBullet
-%{Worked with a team to prototype a concept for the optimization of intermodal container logistics in distribution centers using coordinated multi-robotic systems to decouple transportation mechanisms from grounded machinery}
+%{Worked with a team to prototype a concept for optimization of intermodal container logistics in distribution centers using coordinated multi-robotic systems to decouple transportation mechanisms from grounded machinery}
 %\resumeBullet
 %{Developed low-level software for both networking and communication among internal components of each machine and between robots, as well as manipulation of sensor data using Arduinos and Java on Raspberry Pis}
 %\resumeBullet
@@ -146,14 +148,14 @@
 \resumeSubheading{Password Safe}{November 2017 - January 2018}
 \resumeItemListStart
 \resumeBullet
-{Built a command-line interface password safe, ensuring confidentiality of data entries using SHA-256 hashing and Triple DES encryption, and utilizing a REPL to interact with the user}
+{Built a command-line interface password safe, ensuring confidentiality of data entries through SHA-256 hashing and Triple DES encryption, and utilizing a REPL to interact with user}
 \resumeBullet
-{Made use of Java archives to allow releases of the project to be portable and minimize required dependencies}
+{Utilized of Java archives to allow releases of project to be portable and minimize required dependencies}
 \resumeItemListEnd
 %	\resumeSubheading{Kernel Development Project}
 %	\resumeItemListStart
 %		\resumeBullet
-%		{Develop a working microkernel to better comprehend the depth and levels of OS development}
+%		{Develop a working microkernel to better comprehend depth and levels of OS development}
 %		\resumeBullet
 %		{Understand systems programming with Assembly and C and compare benefits of new systems languages like Rust}
 %	\resumeItemListEnd
@@ -161,13 +163,13 @@
 % \resumeSubheading{ACM Pixel}{October 2018 - December 2018}
 % \resumeItemListStart
 % \resumeBullet{Created a Flask app that receives x and y coordinates and a color as POST requests and places them on a screen}
-% \resumeBullet{Generated systemd services to allow automatic updating of software and launching of the application on boot}
+% \resumeBullet{Generated systemd services to allow automatic updating of software and launching of application on boot}
 % \resumeItemListEnd
-% \resumeSubheading{Arch Linux Configuration}{October 2017 - August 2019}
-% \resumeItemListStart
-% \resumeBullet
-% {Set up an Arch Linux installation by manually formatting partitions, setting up file systems, configuring drive mounting on boot, installing drivers, creating users, and other system administration tasks}
-% \resumeItemListEnd
+ %\resumeSubheading{Arch Linux Configuration}{October 2017 - August 2019}
+ %\resumeItemListStart
+ %\resumeBullet
+%{Set up an Arch Linux installation by manually formatting partitions, setting up file systems, configuring drive mounting on boot, installing drivers, creating users, and other system administration tasks}
+%\resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %----------Activities---------------
@@ -177,10 +179,10 @@
   {Illinois Rise Ultimate Frisbee}{August 2017 - Present}
   \resumeItemListStart
   	\resumeBullet
-  	{Manage club funds as program treasurer during the 2020-2021 academic year for over 100 program members; responsibilities include selecting hotels when traveling, collecting fees for
+  	{Manage club funds as program treasurer during  2020-2021 academic year for over 100 program members; responsibilities include selecting hotels when traveling, collecting fees for
 tournaments, managing jersey creation and procurement, and obtaining team equipment}
   	\resumeBullet
-  	{Captain the B-team in the Spring 2019 season to a 2nd place finish at the Great Lakes Sectionals and facilitate team's growth by planning practices, designing drills, making roster decisions, and boosting morale at tournaments}
+  	{Captain B-team in Spring 2019 season to a 2nd place finish at Great Lakes Sectionals and facilitate team's growth by planning practices, designing drills, making roster decisions, and boosting morale at tournaments}
   	\resumeBullet
   	{Train and compete with a team of like-minded individuals in the sport of ultimate frisbee}
   \resumeItemListEnd
@@ -188,7 +190,7 @@ tournaments, managing jersey creation and procurement, and obtaining team equipm
   	{Chair of GNU Linux User Group (ACM)}{August 2018 - December 2018}
   	\resumeItemListStart
   		\resumeBullet
-  		{Special interest group focused on promoting the use of Linux and the development of free and open source software}
+  		{Special interest group focused on promoting use of Linux and development of free and open source software}
   		\resumeBullet
   		{Involved in projects to provide tools for computer science, engineering students and other ACM members to use}
   	\resumeItemListEnd
@@ -196,7 +198,7 @@ tournaments, managing jersey creation and procurement, and obtaining team equipm
   	{CS 125 Course Assistant}{January 2018 - May 2018}
   	\resumeItemListStart
   	\resumeBullet
-  	{Held 2-3 weekly office hours with 5-10 students present to discuss issues students faced with the machine problems}
+  	{Held 2-3 weekly office hours with 5-10 students present to discuss issues students faced with machine problems}
   	\resumeBullet
   	{Attended a weekly lab section to provide more accessible guidance and instruction through one-on-one assistance}
   	\resumeItemListEnd
@@ -205,15 +207,15 @@ tournaments, managing jersey creation and procurement, and obtaining team equipm
 %--------PROGRAMMING SKILLS------------
 \section{Programming Skills}
   \resumeSubHeadingListStart
-\begin{multicols}{2}
-  	\item[]{
+%\begin{multicols}{2}
+  	\item[]\small{
         \textbf{Languages}{: Java, C, C++, Python, Bash, Verilog, MIPS, Markdown, LaTeX}
     }
-	\hfill
+	%\hfill
 	\item[]{
       	\textbf{Tools/Technologies}{: Git, Docker, Raspberry Pi, ViM}
     }
-\end{multicols}
+%\end{multicols}
 \resumeSubHeadingListEnd
 
 %-------------------------------------------
