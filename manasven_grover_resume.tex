@@ -22,7 +22,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.4in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.0in}
 \setlength{\multicolsep}{0pt plus 0pt minus 0pt}
 \titlespacing*{\section}{0pt}{0\baselineskip}{\baselineskip}
@@ -72,8 +72,8 @@
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,itemsep=0.2pt]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,itemsep=-0.2pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-5pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0.2pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
 
@@ -123,6 +123,17 @@
 \section{Work Experience}
 \resumeSubHeadingListStart
 
+\resumeSubheadingDetailed{IBM}{Durham, NC}{DevOps Engineer}{May 2021 - Present}
+\resumeItemListStart
+\resumeBullet{Work in an agile, collaborative environment to build, deploy, configure, maintain systems, which include software installations, updates, and core services, onto OpenShift Container Platform or other Kubernetes-based clusters}
+\resumeBullet{Design and implement tools for automated deployment and monitoring of multiple environments}
+\resumeBullet{Work with several development teams to enable the configuration of an edge computing distributed framework consisting of a management hub cluster and remote instances to which workloads are deployed}
+%\resumeBullet{Work with development teams to enable a continuous integration environment that sustains high productivity levels and emphasizes defect prevention techniques}
+%\resumeBullet{Ensures delivery pipeline from dev/test, staging and production and perform A/B testing}
+
+\resumeBullet{Automate, measure and optimize system performance, security, and processes}
+\resumeItemListEnd
+
 \resumeSubheadingDetailed{Advanced Reactors and Fuel Cycles (ARFC)}{Champaign, IL}
 {Undergraduate Research Assistant for Nuclear Engineering Department}{May 2019 - August 2019}
 \resumeItemListStart
@@ -130,8 +141,6 @@
 {Debugged a variety of issues in a Python nuclear engineering toolkit (PyNE) to ensure accurate functionality}
 \resumeBullet
 {Re-implemented CircleCI integration tests to use most recent data sources to ensure library produces precise results, isolating test cases in different Docker containers with different optional dependencies}
-\resumeBullet
-{Updated documentation to provide more accurate information on features, updates, and installation}
 \resumeBullet
 {Overhauled Bash installation scripts and Dockerfiles for PyNE to reduce obsolete dependencies, update required dependencies to latest versions, reduce required permissions to install the library, and reorganize dependency package management}
 \resumeItemListEnd
@@ -152,13 +161,6 @@
 \resumeItemListStart
 \resumeBullet{Implemented a physically-based renderer using principles of light optics including reflectivity and transparency, improving render quality using multi-sampling}
 \resumeBullet{Utilized a tree-like bounding volume hierarchy data structure to optimize organization of geometric primitives, especially for rendering larger triangle mesh models, improving ray-intersection detection to logarithmic time}
-\resumeItemListEnd
-\resumeSubheading{Password Safe}{November 2017 - January 2018}
-\resumeItemListStart
-\resumeBullet
-{Built a command-line interface password safe, ensuring confidentiality of data entries through SHA-256 hashing and Triple DES encryption, and utilizing a REPL to interact with user}
-\resumeBullet
-{Utilized of Java archives to allow releases of project to be portable and minimize required dependencies}
 \resumeItemListEnd
 \resumeSubHeadingListEnd
 
